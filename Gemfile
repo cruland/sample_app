@@ -25,7 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'listen', '~> 3.0.8'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'rubysl-pty', :platforms => :ruby
+gem 'web-console', :platforms => :ruby
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -35,8 +36,8 @@ gem 'listen', '~> 3.0.8'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'sqlite3', '1.3.9'
-  gem 'web-console', '2.0.0.beta3'
+  #gem 'sqlite3', '1.3.9'
+  #gem 'web-console', '2.0.0.beta3'
   gem 'spring', '1.1.3'
 end
 
@@ -51,6 +52,6 @@ group :production do
 	gem 'rails_12factor', '0.0.2'
 end
 
-
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
