@@ -31,7 +31,7 @@ gem 'listen', '~> 3.0.8'
 #gem 'web-console', :platforms => :ruby
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem "bcrypt"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
